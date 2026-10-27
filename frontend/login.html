@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Student Login</h1>
+        <p>Welcome to the feedback portal</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="feedback.html">Give Feedback</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+    <main class="card">
+        <h2>Login</h2>
+
+        <form id="loginForm">
+            <label for="loginName">Student Name</label>
+            <input type="text" id="loginName" required>
+
+            <label for="loginEmail">Email Address</label>
+            <input type="email" id="loginEmail" required>
+
+            <button type="submit">Continue</button>
+        </form>
+
+        <p id="loginMessage" class="message"></p>
+    </main>
+
+    <footer>Online Feedback System</footer>
+</body>
+</html>

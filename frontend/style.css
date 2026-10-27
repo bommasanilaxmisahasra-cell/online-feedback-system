@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background-color: #1d4ed8;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+nav {
+    background-color: #1e3a8a;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background-color: #3b82f6;
+}
+
+.card {
+    background-color: white;
+    width: 90%;
+    max-width: 480px;
+    margin: 35px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #cbd5e1;
+}
+
+.home {
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.wide {
+    max-width: 900px;
+}
+
+h2 {
+    color: #1d4ed8;
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 7px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #93c5fd;
+    border-color: #2563eb;
+}
+
+button,
+.btn {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #1e40af;
+}
+
+.message {
+    text-align: center;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.stat {
+    flex: 1;
+    padding: 18px;
+    background-color: #dbeafe;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 16px;
+}
+
+.stat p {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.feedback-item {
+    border: 1px solid #cbd5e1;
+    padding: 16px;
+    margin-top: 15px;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+.feedback-item h3 {
+    color: #1d4ed8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+@media (max-width: 500px) {
+    .stats {
+        flex-direction: column;
+    }
+
+    nav a {
+        padding: 8px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+}

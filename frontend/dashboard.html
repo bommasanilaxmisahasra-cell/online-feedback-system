@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Feedback Dashboard</h1>
+        <p>Review student feedback</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="feedback.html">Give Feedback</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+    <main class="card wide">
+        <h2>Feedback Summary</h2>
+
+        <div class="stats">
+            <div class="stat">
+                <h3>Total Feedback</h3>
+                <p id="totalFeedback">0</p>
+            </div>
+
+            <div class="stat">
+                <h3>Average Rating</h3>
+                <p id="averageRating">0</p>
+            </div>
+        </div>
+
+        <button type="button" id="refreshButton">Refresh Feedback</button>
+        <p id="dashboardMessage" class="message"></p>
+
+        <div id="feedbackList"></div>
+    </main>
+
+    <footer>Online Feedback System</footer>
+</body>
+</html>

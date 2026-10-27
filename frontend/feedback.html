@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Feedback</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Student Feedback</h1>
+        <p>Tell us about your learning experience</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="feedback.html">Give Feedback</a>
+        <a href="dashboard.html">Dashboard</a>
+    </nav>
+
+    <main class="card">
+        <h2>Feedback Form</h2>
+
+        <form id="feedbackForm">
+            <label for="student">Student Name</label>
+            <input type="text" id="student" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" required>
+
+            <label for="rating">Rating</label>
+            <select id="rating" required>
+                <option value="">Choose a rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <label for="comment">Your Comments</label>
+            <textarea id="comment" rows="4" required></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <p id="feedbackMessage" class="message"></p>
+    </main>
+
+    <footer>Thank you for sharing your feedback!</footer>
+</body>
+</html>

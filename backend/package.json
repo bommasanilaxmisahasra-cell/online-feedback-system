@@ -1,0 +1,12 @@
+{
+  "name": "online-feedback-system",
+  "version": "1.0.0",
+  "description": "A student online feedback system for the SESD project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}
