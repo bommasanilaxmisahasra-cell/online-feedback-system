@@ -4,7 +4,7 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-const feedbackRoutes = require("./routes/feedbackRoutes");
+const feedbackRoutes = require('./routes/feedback-temp');
 
 app.use(express.json());
 
@@ -13,7 +13,6 @@ app.use(
 );
 
 app.use("/api/feedback", feedbackRoutes);
-
 app.get("/", (req, res) => {
     res.sendFile(
         path.join(__dirname, "..", "frontend", "index.html")
