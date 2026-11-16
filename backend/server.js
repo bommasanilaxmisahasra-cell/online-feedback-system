@@ -4,7 +4,7 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-const feedbackRoutes = require('./routes/feedback-temp');
+const feedbackRoutes = require('./routes/feedbackRoutes');
 
 app.use(express.json());
 
